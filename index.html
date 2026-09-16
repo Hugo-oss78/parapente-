@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parapente Mémo — Pense-bête de reprise</title>
+<meta name="description" content="Pense-bête personnel pour se remettre en mémoire les bases du parapente avant une reprise : matériel, technique, météo, sécurité et réglementation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23163a5f'/%3E%3Cpath d='M12 46 Q50 18 88 46 Q68 40 50 52 Q32 40 12 46Z' fill='%23f2a541'/%3E%3Cline x1='50' y1='52' x2='40' y2='78' stroke='%23f2a541' stroke-width='3'/%3E%3Cline x1='50' y1='52' x2='60' y2='78' stroke='%23f2a541' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="disclaimer" role="note">
+  <strong>⚠️ Pense-bête, pas un cours.</strong>
+  Ce site est un outil personnel de révision, pas une source officielle. Avant de revoler, fais impérativement un ou plusieurs stages de reprise avec un moniteur diplômé (BPJEPS/BIA) en activité,
+  et vérifie la réglementation aérienne à jour (espaces aériens, licence, assurance) directement auprès de la <a href="https://federation.ffvl.fr/" target="_blank" rel="noopener">FFVL</a>
+  et du <a href="https://www.sia.aviation-civile.gouv.fr/" target="_blank" rel="noopener">SIA</a>. Certains points ici sont volontairement simplifiés ou peuvent avoir évolué depuis leur rédaction — à double-vérifier.
+</div>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <div class="brand">🪂 Parapente <small>Mémo de reprise</small></div>
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <button class="tab-btn active" data-tab="materiel">Matériel</button>
+      <button class="tab-btn" data-tab="avant-vol">Avant le vol</button>
+      <button class="tab-btn" data-tab="technique">Technique</button>
+      <button class="tab-btn" data-tab="meteo">Météo</button>
+      <button class="tab-btn" data-tab="securite">Sécurité &amp; réglementation</button>
+      <button class="tab-btn" data-tab="lexique">Lexique</button>
+      <button class="tab-btn" data-tab="quiz">Quiz</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- MATERIEL -->
+  <section class="panel active" id="panel-materiel" data-panel="materiel">
+    <h1 class="panel-title">Le matériel</h1>
+    <p class="panel-intro">Les grandes familles d'équipement et ce qu'il faut vérifier régulièrement. Coche « révisé » sur les points que tu maîtrises, ça se garde en mémoire sur cet appareil.</p>
+
+    <article class="card" data-id="mat-voile">
+      <header><h2>La voile (aile)</h2><label class="reviewed"><input type="checkbox" data-review="mat-voile"> révisé</label></header>
+      <ul>
+        <li>Classifiée par norme EN (ex-DHV) : <strong>A</strong> (tolérante, débutant/loisir), <strong>B</strong> (loisir/progression, la plus répandue), <strong>C</strong> (exigeante, pilotage actif requis), <strong>D</strong> (compétition). Après 15 ans de pause, repartir sur une EN A ou B basse est le choix raisonnable le temps de retrouver les sensations.</li>
+        <li>Composée du caisson (structure en tissu formant le profil), des suspentes (souvent en 2 ou 3 étages : principales, intermédiaires, hautes), des élévateurs (A/B/C/D à l'avant vers l'arrière) et des freins.</li>
+        <li>Les élévateurs A servent aussi aux « oreilles », les C (ou trim/accélérateur selon les modèles) à des manœuvres de descente rapide.</li>
+        <li>Durée de vie indicative : suivant l'usage et l'exposition UV, un contrôle (« check ») en atelier agréé est recommandé tous les 100h de vol ou 1-2 ans, et obligatoire avant toute reprise après une longue pause ou un doute sur l'état du tissu/suspentage.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="mat-sellette">
+      <header><h2>La sellette</h2><label class="reviewed"><input type="checkbox" data-review="mat-sellette"> révisé</label></header>
+      <ul>
+        <li>Réglages clés : hauteur d'assise, écartement des élévateurs, inclinaison du dossier — un mauvais réglage nuit au contrôle en virage et au confort au décollage/atterrissage.</li>
+        <li>Protection dorsale obligatoire en pratique : mousse ou airbag (se gonfle à l'accélération de l'air, donc moins protecteur si la chute est verticale/sans vitesse horizontale).</li>
+        <li>Poche de parachute de secours intégrée, avec poignée accessible des deux mains si possible.</li>
+        <li>Sangle de poitrine (speed bar / accélérateur) et sangle ventrale à vérifier avant chaque vol.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="mat-secours">
+      <header><h2>Le parachute de secours</h2><label class="reviewed"><input type="checkbox" data-review="mat-secours"> révisé</label></header>
+      <ul>
+        <li>Types principaux : rond (classique), en croix, ou carré/directionnel (souvent plus stable et pilotable en aile de secours moderne).</li>
+        <li>Doit être re-plié périodiquement (généralement tous les 6 mois à 1 an selon fabricant/conditions de stockage) par une personne formée — c'est un point à vérifier en priorité avant de revoler après une longue pause.</li>
+        <li>L'entraînement au lancer (à sec, poignée en main, geste répété) fait partie des classiques d'un stage de reprise.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="mat-instruments">
+      <header><h2>Instruments &amp; accessoires</h2><label class="reviewed"><input type="checkbox" data-review="mat-instruments"> révisé</label></header>
+      <ul>
+        <li><strong>Variomètre</strong> : indique le taux de montée/descente (souvent avec altimètre et parfois GPS intégré) — indispensable pour exploiter les thermiques.</li>
+        <li><strong>Radio</strong> : utile en école/site encadré pour les consignes, et en sécurité pour prévenir en cas de problème.</li>
+        <li><strong>Casque</strong> homologué vol libre, <strong>chaussures montantes</strong> (protection cheville), gants recommandés selon saison.</li>
+        <li>Un FLARM ou équivalent anti-collision est un vrai plus sur site fréquenté (planeurs notamment).</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- AVANT LE VOL -->
+  <section class="panel" id="panel-avant-vol" data-panel="avant-vol">
+    <h1 class="panel-title">Avant le vol</h1>
+    <p class="panel-intro">La check-list qui doit redevenir un réflexe, surtout après une pause longue.</p>
+
+    <article class="card" data-id="av-visu">
+      <header><h2>Visu matériel</h2><label class="reviewed"><input type="checkbox" data-review="av-visu"> révisé</label></header>
+      <ul>
+        <li>Voile : déploiement propre, pas de suspente emmêlée ni coincée, extrados/intrados sans déchirure ni trace d'usure suspecte, élévateurs et maillons rapides en bon état.</li>
+        <li>Sellette : mousse/airbag en place, sangles et boucles fermées et vérifiées une à une (fermeture ventrale = cause classique d'accident quand elle est oubliée).</li>
+        <li>Casque attaché, parachute de secours en place et poignée accessible.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="av-meteo-site">
+      <header><h2>Météo &amp; site du jour</h2><label class="reviewed"><input type="checkbox" data-review="av-meteo-site"> révisé</label></header>
+      <ul>
+        <li>Vent au sol et en altitude (force, direction, régularité), fenêtre météo, évolution prévue sur la durée du vol.</li>
+        <li>Orientation du site compatible avec le vent du jour, présence d'autres pilotes, sens de la circulation sur le site.</li>
+        <li>Reconnaissance de l'aire de décollage et de la zone d'atterrissage (obstacles, dégagements, axes d'approche).</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="av-plan-vol">
+      <header><h2>Plan de vol personnel</h2><label class="reviewed"><input type="checkbox" data-review="av-plan-vol"> révisé</label></header>
+      <ul>
+        <li>Prévenir quelqu'un de son vol (site, heure, durée estimée) — bon réflexe même en école/site encadré.</li>
+        <li>Fixer ses limites du jour (niveau, fatigue, forme physique) : après 15 ans de pause, viser des conditions calmes et un site connu/encadré plutôt qu'un site exigeant.</li>
+        <li>Vérifier la validité de sa licence FFVL et de son assurance responsabilité civile.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- TECHNIQUE -->
+  <section class="panel" id="panel-technique" data-panel="technique">
+    <h1 class="panel-title">Technique de pilotage</h1>
+    <p class="panel-intro">Les gestes fondamentaux, à ne réintroduire progressivement qu'en présence d'un moniteur.</p>
+
+    <article class="card" data-id="tech-gonflage">
+      <header><h2>Gonflage</h2><label class="reviewed"><input type="checkbox" data-review="tech-gonflage"> révisé</label></header>
+      <ul>
+        <li><strong>Face voile</strong> (vent faible à nul) : on avance en tirant la voile au-dessus de soi en regardant l'aile monter, on la stabilise avant de se retourner et courir vers la pente.</li>
+        <li><strong>Dos voile</strong> (vent modéré à fort) : on gonfle en restant face à la voile, on la stabilise en la freinant symétriquement, puis on se retourne une fois qu'elle est stable au-dessus.</li>
+        <li>Un gonflage asymétrique (aile qui part d'un côté) se corrige au frein du côté qui part en avant, pas en tirant fort des deux mains.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="tech-pilotage">
+      <header><h2>Pilotage en virage</h2><label class="reviewed"><input type="checkbox" data-review="tech-pilotage"> révisé</label></header>
+      <ul>
+        <li>Virage induit par une combinaison frein (action principale) + report de poids dans la sellette (affine et économise l'amplitude de frein) — le pilotage « aux fesses » est central en thermique.</li>
+        <li>Éviter le double effet frein+sellette trop brusque en toute petite hauteur : risque de décrochage d'un côté (auto-rotation).</li>
+        <li>Garder toujours une main sur chaque frein en vol, mains hautes = moins de traînée, mains basses = plus de frein disponible avant décrochage.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="tech-oreilles">
+      <header><h2>Oreilles &amp; accélérateur</h2><label class="reviewed"><input type="checkbox" data-review="tech-oreilles"> révisé</label></header>
+      <ul>
+        <li><strong>Oreilles</strong> : on tire les élévateurs A externes pour refermer les extrémités de la voile → augmente le taux de chute sans trop augmenter la vitesse, utile pour perdre de la hauteur ou pénétrer dans du vent fort.</li>
+        <li><strong>Accélérateur (speed bar)</strong> : augmente la vitesse de l'aile en modifiant son incidence, réduit la marge avant décrochage — à utiliser loin du relief et avec prudence en air turbulent.</li>
+        <li>Les deux se combinent parfois (oreilles + accélérateur) pour maximiser le taux de descente en toute sécurité, technique vue en stage, pas à improviser seul.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="tech-decrochage">
+      <header><h2>Décrochage &amp; situations dégradées</h2><label class="reviewed"><input type="checkbox" data-review="tech-decrochage"> révisé</label></header>
+      <ul>
+        <li><strong>Fermeture</strong> (aile qui se referme partiellement, souvent en turbulence) : se rattrape généralement seule, la réaction du pilote est de ne pas sur-piloter et de contrer une éventuelle rotation au frein opposé.</li>
+        <li><strong>Décrochage</strong> (freins trop bas, portance perdue) : relâcher progressivement les freins pour redonner de la vitesse à l'aile.</li>
+        <li><strong>Parachutale</strong> (freins maintenus bas, l'aile recule et perd toute vitesse sans forcément décrocher) : relâcher doucement pour reprendre de la vitesse.</li>
+        <li>Ce sont des situations qui se travaillent en <strong>SIV</strong> (Simulation d'Incidents de Vol, au-dessus de l'eau avec encadrement) — fortement recommandé avant/pendant une reprise après une longue pause.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="tech-atterrissage">
+      <header><h2>Approche &amp; atterrissage</h2><label class="reviewed"><input type="checkbox" data-review="tech-atterrissage"> révisé</label></header>
+      <ul>
+        <li>Circuit classique façon aéronautique : vent arrière → étape de base → finale, pour arriver face au vent avec de la marge.</li>
+        <li>Garder de la vitesse jusqu'au sol (pas de frein excessif trop tôt), arrondi final aux freins juste avant contact pour casser le taux de chute.</li>
+        <li>Prévoir un plan B (zone de dégagement) si l'approche ne se présente pas bien — mieux vaut se poser ailleurs proprement que forcer une zone compromise.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- METEO -->
+  <section class="panel" id="panel-meteo" data-panel="meteo">
+    <h1 class="panel-title">Météorologie</h1>
+    <p class="panel-intro">Les mécanismes à ravoir en tête pour lire un site et une fenêtre météo.</p>
+
+    <article class="card" data-id="meteo-vent">
+      <header><h2>Vent &amp; gradient</h2><label class="reviewed"><input type="checkbox" data-review="meteo-vent"> révisé</label></header>
+      <ul>
+        <li>Le vent est généralement plus fort en altitude qu'au sol (gradient de vent) à cause du frottement sur le relief/la végétation.</li>
+        <li><strong>Brise de pente</strong> : l'air chauffé au sol monte le long du relief en journée (favorable au vol), s'inverse en fin de journée (brise descendante, thermique qui « tombe »).</li>
+        <li><strong>Brise de vallée</strong> : circulation à plus grande échelle, air qui remonte la vallée en journée, redescend la nuit.</li>
+        <li><strong>Rotor / turbulence dynamique</strong> : sous le vent d'un obstacle (crête, bâtiment, arbres), l'air peut être très turbulent — zone à éviter.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="meteo-thermiques">
+      <header><h2>Thermiques</h2><label class="reviewed"><input type="checkbox" data-review="meteo-thermiques"> révisé</label></header>
+      <ul>
+        <li>Formés par le réchauffement inégal du sol (rochers, cultures, bitume chauffent plus vite que forêt/eau), l'air chaud plus léger s'élève en bulle ou colonne.</li>
+        <li>Un cumulus qui se forme marque souvent le sommet d'un thermique (condensation) — sa base indique approximativement le niveau de condensation.</li>
+        <li>Cycle thermique : le déclenchement est souvent intermittent (cycles), avec des phases plus calmes entre deux départs.</li>
+        <li>L'air est généralement plus turbulent près du sol et en bord de thermique, plus lisse au cœur.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="meteo-stabilite">
+      <header><h2>Stabilité de l'air</h2><label class="reviewed"><input type="checkbox" data-review="meteo-stabilite"> révisé</label></header>
+      <ul>
+        <li>Air instable : favorable aux thermiques mais aussi aux développements orageux en journée (cumulus qui grossissent vite, sommets en choux-fleurs = signal d'alerte).</li>
+        <li>Air stable : vol plus laminaire, moins de thermiques, mais brume/inversion possible qui limite le plafond.</li>
+        <li>Toujours croiser plusieurs sources avant de voler : ce que je liste ici est une trame générale, pas une méthode de prévision — les outils spécialisés (type Meteo-Parapente, prévisions Meteo France aviation, sondages) restent la référence à jour.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- SECURITE -->
+  <section class="panel" id="panel-securite" data-panel="securite">
+    <h1 class="panel-title">Sécurité &amp; réglementation</h1>
+    <p class="panel-intro">Les points à revérifier en priorité à jour, car la réglementation évolue — je ne suis pas certain que ce qui suit soit exhaustif ou parfaitement à jour, vérifie sur les sources officielles (FFVL, SIA/AIP France).</p>
+
+    <article class="card" data-id="sec-espaces">
+      <header><h2>Espaces aériens</h2><label class="reviewed"><input type="checkbox" data-review="sec-espaces"> révisé</label></header>
+      <ul>
+        <li>Classement en classes (A à G selon l'OACI) qui déterminent les règles de pénétration et les distances de visibilité/écart aux nuages — je pense que le vol libre évolue le plus souvent en espace non contrôlé (classe G) ou dans des portions dédiées, mais ça dépend fortement du site : à vérifier sur la carte VAC/OACI du secteur avant de voler.</li>
+        <li>Zones réglementées (P), dangereuses (D) ou interdites (R), zones militaires (type RTBA en France) : leur activation peut varier selon les jours/horaires — se renseigner avant le vol (NOTAM, SIA).</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="sec-priorites">
+      <header><h2>Règles de priorité en vol</h2><label class="reviewed"><input type="checkbox" data-review="sec-priorites"> révisé</label></header>
+      <ul>
+        <li>En thermique : tous les pilotes tournent dans le même sens que celui déjà engagé (le premier arrivé impose le sens).</li>
+        <li>Croisement face à face : chacun dévie sur sa droite, comme sur une route.</li>
+        <li>Dépassement : par la droite en général, en laissant une marge confortable.</li>
+        <li>Le pilote qui a le relief à sa droite (vol « aile droite au relief ») est prioritaire le long d'une pente — principe classique à reconfirmer en stage, car les usages peuvent varier légèrement selon les fédérations/pays.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="sec-urgence">
+      <header><h2>Procédures d'urgence</h2><label class="reviewed"><input type="checkbox" data-review="sec-urgence"> révisé</label></header>
+      <ul>
+        <li><strong>Cravate</strong> (une suspente ou l'extrémité de l'aile reste accrochée après une fermeture) : tenter de la dégager en tirant franchement le frein du côté fermé ; si ça ne suffit pas et que l'altitude le permet, envisager le parachute de secours.</li>
+        <li><strong>Parachute de secours</strong> : décision à prendre tôt (pas en dernier recours à basse hauteur), lancer franc et loin du corps dans l'axe dégagé, puis s'accrocher et se préparer à l'atterrissage sous secours.</li>
+        <li>Après tout incident (fermeture sévère, secours, choc), inspection du matériel avant de revoler et déclaration à sa fédération/assurance si besoin.</li>
+      </ul>
+    </article>
+
+    <article class="card" data-id="sec-admin">
+      <header><h2>Licence, assurance, carnet</h2><label class="reviewed"><input type="checkbox" data-review="sec-admin"> révisé</label></header>
+      <ul>
+        <li>En France, la pratique passe généralement par une licence FFVL incluant une assurance responsabilité civile — à réactiver/vérifier avant de revoler, surtout après une pause de plusieurs années.</li>
+        <li>Un carnet de vol (papier ou appli type XContest/GPS dédié) aide à tracer l'expérience réelle, utile aussi pour un moniteur qui évalue ton niveau de reprise.</li>
+        <li>Je ne suis pas sûr des montants ou conditions précises actuelles de ces licences/assurances — à vérifier directement sur le site de la FFVL.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- LEXIQUE -->
+  <section class="panel" id="panel-lexique" data-panel="lexique">
+    <h1 class="panel-title">Lexique</h1>
+    <p class="panel-intro">Vocabulaire courant, pour retrouver vite un mot oublié.</p>
+    <input type="search" id="lexiqueSearch" class="lex-search" placeholder="Rechercher un mot…" aria-label="Rechercher dans le lexique">
+    <dl class="lexique" id="lexiqueList">
+      <div class="lex-item"><dt>Abattée</dt><dd>Mouvement de l'aile qui plonge vers l'avant, souvent après une remontée ou une phase de frein relâché brusquement.</dd></div>
+      <div class="lex-item"><dt>Accélérateur (speed bar)</dt><dd>Commande au pied qui augmente la vitesse de l'aile en réduisant son incidence.</dd></div>
+      <div class="lex-item"><dt>Anémomètre</dt><dd>Instrument de mesure de la vitesse du vent.</dd></div>
+      <div class="lex-item"><dt>Autorotation</dt><dd>Rotation incontrôlée de la voile suite à un décrochage asymétrique.</dd></div>
+      <div class="lex-item"><dt>Cravate</dt><dd>Suspente ou extrémité d'aile restée accrochée après une fermeture, empêchant l'aile de se rouvrir normalement.</dd></div>
+      <div class="lex-item"><dt>Décrochage</dt><dd>Perte de portance de l'aile quand elle dépasse son angle d'incidence critique (freins trop bas).</dd></div>
+      <div class="lex-item"><dt>Élévateurs</dt><dd>Sangles reliant la sellette aux suspentes, groupées en rangées A/B/C/D de l'avant vers l'arrière de la voile.</dd></div>
+      <div class="lex-item"><dt>Fermeture</dt><dd>Affaissement (partiel ou total) d'un côté ou du centre de l'aile, généralement dû à une turbulence.</dd></div>
+      <div class="lex-item"><dt>Grandes oreilles</dt><dd>Voir « Oreilles » : repliement des extrémités de voile via les élévateurs A pour augmenter le taux de chute.</dd></div>
+      <div class="lex-item"><dt>PTU</dt><dd>Prise de Terrain en U : circuit d'approche classique (vent arrière, base, finale) pour se poser face au vent.</dd></div>
+      <div class="lex-item"><dt>Parachutale</dt><dd>Situation où l'aile recule et perd sa vitesse air sans forcément décrocher, freins trop maintenus bas.</dd></div>
+      <div class="lex-item"><dt>Plafond</dt><dd>Altitude maximale atteignable ce jour-là, généralement limitée par une inversion ou la base des nuages.</dd></div>
+      <div class="lex-item"><dt>Rotor</dt><dd>Tourbillon d'air turbulent qui se forme sous le vent d'un obstacle (crête, bâtiment, ligne d'arbres).</dd></div>
+      <div class="lex-item"><dt>SIV</dt><dd>Simulation d'Incidents de Vol : stage encadré, généralement au-dessus de l'eau, pour s'entraîner aux incidents (fermetures, décrochages, secours).</dd></div>
+      <div class="lex-item"><dt>Suspentes</dt><dd>Fils reliant la voile aux élévateurs, souvent répartis en plusieurs étages (principales, intermédiaires, hautes).</dd></div>
+      <div class="lex-item"><dt>Thermique</dt><dd>Colonne ou bulle d'air ascendant, générée par le réchauffement inégal du sol.</dd></div>
+      <div class="lex-item"><dt>Variomètre</dt><dd>Instrument mesurant le taux de montée/descente, souvent couplé à un altimètre et parfois un GPS.</dd></div>
+      <div class="lex-item"><dt>Vent de gradient</dt><dd>Variation de la force du vent avec l'altitude, généralement plus fort en hauteur qu'au sol.</dd></div>
+      <div class="lex-item"><dt>Vol libre</dt><dd>Terme englobant parapente, deltaplane, kitesurf etc. — disciplines aériennes sans motorisation ni ligne obligatoire au sol.</dd></div>
+      <div class="lex-item"><dt>Voltige</dt><dd>Manœuvres acrobatiques en parapente (wingover, SAT, hélicoptère…), discipline à part nécessitant une formation spécifique.</dd></div>
+    </dl>
+    <p class="lex-empty" id="lexiqueEmpty" hidden>Aucun résultat.</p>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="panel" id="panel-quiz" data-panel="quiz">
+    <h1 class="panel-title">Quiz de révision</h1>
+    <p class="panel-intro">Des questions à choix multiples pour tester ce qui reste. Le score n'est qu'un indicateur personnel — une bonne note ici ne remplace pas une évaluation par un moniteur.</p>
+
+    <div class="quiz-controls">
+      <div class="quiz-filters" id="quizFilters"></div>
+      <button class="btn" id="quizRestart">Recommencer</button>
+    </div>
+
+    <div id="quizArea"></div>
+    <div class="quiz-summary" id="quizSummary" hidden></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Outil personnel de révision — pas une ressource officielle. Sources à jour : <a href="https://federation.ffvl.fr/" target="_blank" rel="noopener">FFVL</a>, <a href="https://www.sia.aviation-civile.gouv.fr/" target="_blank" rel="noopener">SIA / AIP France</a>, et ton moniteur.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
